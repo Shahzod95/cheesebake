@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-cream: #FDFBF7;
+  --color-cream-dark: #F3EFE6;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-light: #333333;
+  --color-gold: #C5A880;
+  --color-gold-light: #D4C0A1;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
